@@ -8,20 +8,16 @@
     <meta charset="utf-8">
 </head>
 <body>
-    <div class="container">  
-        <div class="row mt-3">
-            <form class="form-contact-us page-contact" method="post" onsubmit="return validarForm()">
-                <div class="row-input-wrap">
-                    <div class="form-group">
-                        <label>Digite uma informação</label>                        
-                        <input type="text" class="form-control" id="nome" value="" placeholder="Informe algo">
-                    </div>
-                </div>
-                <div class="">
-                        <button type="button" id="btn-enviar" class="btn btn-primary">Enviar</button>
-                </div>
-            </form>                    
-        </div>
+    <div class="container">         
+        <form action="" onsubmit="return validarForm()">            
+            <div class="row mt-3">
+                <div class="form-group">
+                    <label>Digite uma informação</label>                        
+                    <input type="text" class="form-control mb-3" id="nome">
+                    <button class="btn btn-primary">Enviar</button>
+                </div>    
+            </div>                
+        </form>
     </div>
 <script>        
         btn_Enviar = document.querySelector('#btn-enviar');
@@ -36,8 +32,9 @@
                 alert ("Dado Digitado não possui 10 caracteres");
                 return false;        
             }else{
-                alert ("Tudo Certo");
-                return true;        
+                alert ("Tudo Certo");                
+                return true;      
+                
             }
         }            
 </script>
