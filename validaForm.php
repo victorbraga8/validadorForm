@@ -19,8 +19,7 @@
             </div>                
         </form>
     </div>
-<script>        
-      
+<script>              
         function validarForm(){
             if($("#codigo").val().length < 10){
                 alert("Dado Digitado não possui 10 caracteres");
@@ -30,7 +29,6 @@
                 return true;
             }
         }            
-
 </script>
 </body>
     
