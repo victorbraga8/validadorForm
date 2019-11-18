@@ -20,23 +20,17 @@
         </form>
     </div>
 <script>        
-        btn_Enviar = document.querySelector('#btn-enviar');
-        btn_Enviar.addEventListener('click', validarForm);
-
+      
         function validarForm(){
-
-            dadoDigitado = document.querySelector('#nome');
-            dadoTamanho = dadoDigitado.value.length;
-            
-            if(dadoTamanho < 10){
-                alert ("Dado Digitado não possui 10 caracteres");
-                return false;        
+            if($("#codigo").val().length < 10){
+                alert("Dado Digitado não possui 10 caracteres");
+                return false;
             }else{
-                alert ("Tudo Certo");                
-                return true;      
-                
+                alert("Tudo Ok");
+                return true;
             }
         }            
+
 </script>
 </body>
     
